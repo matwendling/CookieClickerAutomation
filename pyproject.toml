@@ -1,0 +1,21 @@
+[project]
+name = "cookie-clicker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "kurtwendling",email = "mateusfagundeslopes@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "selenium (>=4.44.0,<5.0.0)",
+    "undetected-chromedriver (>=3.5.5,<4.0.0)",
+    "setuptools (>=82.0.1,<83.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cookie_clicker", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

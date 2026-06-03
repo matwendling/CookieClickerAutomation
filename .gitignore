@@ -1,7 +1,3 @@
-# Remove these two after testing is finished
-main.py
-test.py
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

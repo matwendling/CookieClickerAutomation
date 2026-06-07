@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class UpgradeDTO:
+    id: str
     name: str
-    cost: int
-    available: bool
+    price: int
+    cookies_per_second: int

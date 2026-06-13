@@ -1,7 +1,7 @@
-from cookie_clicker.src.app.upgrades.domain.dtos.upgrade_dto import UpgradeDTO
-from cookie_clicker.src.app.upgrades.domain.providers.i_upgrade_adapter import IUpgradeAdapter
+from app.upgrades.domain.dtos.upgrade_dto import UpgradeDTO
+from app.upgrades.domain.providers.i_upgrade_adapter import IUpgradeProvider
 
-class UpgradeAdapter(IUpgradeAdapter):
+class UpgradeAdapter(IUpgradeProvider):
     def fetch_one(self, Upgrade_id: int) -> UpgradeDTO:
         """
         Fetches one Upgrade from the DOM.

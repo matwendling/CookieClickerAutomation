@@ -1,9 +1,10 @@
 from abc import ABC, abstractmethod
 
 from undetected_chromedriver import Chrome
-from cookie_clicker.src.app.upgrades.domain.dtos.upgrade_dto import UpgradeDTO
+from app.upgrades.domain.dtos.upgrade_dto import UpgradeDTO
 
-class IUpgradeAdapter(ABC):
+
+class IUpgradeProvider(ABC):
     @abstractmethod
     def fetch_building_element(self, driver: Chrome) -> UpgradeDTO:
         """

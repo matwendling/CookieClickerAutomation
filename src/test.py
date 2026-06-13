@@ -24,3 +24,13 @@ print(type(price_test.text)) # str
 time.sleep(10)
 
 driver.quit()
+
+# TEST
+
+def get_all_available_upgrades_id() -> list[str]:
+    all_upgrades = driver.find_elements(By.CSS_SELECTOR, "#upgrades div")
+    return [upgrade.get_attribute("id") for upgrade in all_upgrades]
+
+def get_all_available_buildings_id() -> list[str]:
+    all_buildings = driver.find_elements(By.CSS_SELECTOR, "#products div")
+    return [building.get_attribute("id") for building in all_buildings if building.get_attribute("class") == "product unlocked enabled"]
